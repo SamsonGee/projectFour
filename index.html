@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Quiz</title>
+</head>
+<body>
+    <div class="container-fluid top">
+        <header class="row">
+            <div class="col-sm-8 highscores" id="highscores">
+                <button>High Scores</button>
+            </div>
+            <div class="col-sm timer-section">
+                <!-- timer  -->
+                <p>Timer <span id="timer">10</span></p>
+            </div>
+        </header>
+    </div>
+    <div class="start-btn">
+        <!-- Start button  -->
+        <button id="startquiz"> Start </button>
+    </div>
+    <div class="quiz">
+        <!-- Quiz and questions -->
+        <div class="quiz-box alert alert-primary" >
+            <span><strong>What was the name of the first Robin? (Batman's sidekick)</strong></span>
+        </div>
+        <div class="quiz-list">
+            <div class="quiz-options">
+                <span class="correct list-group-item">Dick Grayson</span>
+            </div>
+            <div class="quiz-options list-group-item">
+                <span>Jason Todd</span>
+            </div>
+            <div class="quiz-options list-group-item">
+                <span>Tim Drake</span>
+            </div>
+        </div>
+            <div class="quiz-box alert alert-primary" >
+                <span><strong>Which of these characters are the fastest?</strong></span>
+            </div>
+            <div class="quiz-list">
+                <div class="quiz-options list-group-item">
+                    <span class="correct">The Flash</span>
+                </div>
+                <div class="quiz-options list-group-item">
+                    <span>Superman</span>
+                </div>
+                <div class="quiz-options list-group-item">
+                    <span>Green Lantern</span>
+                </div>
+            </div>    
+        
+            <div class="quiz-box alert alert-primary" >
+                <span><strong>Who is a villain to Green Lantern?</strong></span>
+            </div>
+            <div class="quiz-list">
+                <div class="quiz-options list-group-item">
+                    <span>Solomon Grundy</span>
+                </div>
+                <div class="quiz-options list-group-item">
+                    <span>Poison Ivy</span>
+                </div>
+                <div class="quiz-options list-group-item">
+                    <span class="correct">Sinestro</span>
+                </div>
+            </div>
+        
+            <div class="quiz-box alert alert-primary" >
+                <span><strong>What's the real name of Cat Woman?</strong></span>
+            </div>
+            <div class="quiz-list">
+                <div class="quiz-options list-group-item">
+                    <span>Iris West</span>
+                </div>
+                <div class="quiz-options list-group-item">
+                    <span>Dr. Pamela Isley</span>
+                </div>
+                <div class="quiz-options list-group-item">
+                    <span>Selina Kyle</span>
+                </div>
+            </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
