@@ -4,7 +4,8 @@ var questionCount = 0;
 var hsButton = document.querySelector("#highscores")
 var starter = document.querySelector("#startquiz");
 var quiz = document.querySelector(".quiz");
-
+var quizSelect = document.querySelector(".quiz-options")
+var quizAnswer = document.querySelector(".correct")
 
 
 
@@ -89,7 +90,7 @@ var questionCycle = function () {
         askQuestions(index);
         /* quizAnswer.addEventListener("click", count+10);
         quizSelect.addEventListener("click", count-10); */
-        effectTimer();
+        /* effectTimer(); */
         
         /* if (quizSelect.addEventListener("click", effectTimer)){
             console.log("test");
@@ -118,9 +119,11 @@ var askQuestions = function(index){
     quizBox.innerHTML = questionPrompt;
     quizList.innerHTML = quizOptions
     console.log(questions[index].ask);
-    var options = quizOptions.querySelectorAll("quiz-options");
-    for (var i = 0; i < quizList.length; i++){
-     quizList[i].setAttribute("click", "answerSelected(this)");   
+    for (var i = 0; i < questions.length; i++){
+        if (quizSelect.addEventListener("click", lessTime)) {
+
+        }
+        else (quizAnswer.addEventListener("click", moreTime));;
     }
 }
 
@@ -162,7 +165,10 @@ let questions = [
     }
 ];
 
-quizSelect.addEventListener("click", moreTime);
-/* quizAnswer.correct.addEventListener("click", lessTime); */
+console.log(quizAnswer);
+console.log(quizSelect);
+
+/* quizSelect.addEventListener("click", moreTime);
+quizAnswer.addEventListener("click", lessTime); */
 hsButton.addEventListener("click", showResults);
 starter.addEventListener("click", startQuiz);
